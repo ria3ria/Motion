@@ -36,5 +36,9 @@ public interface UserMapper {
 	
 	@ResultMap("userResultMap")
 	@Update("UPDATE USER_TB SET USER_PW = #{userPW} WHERE PHONE_NUMBER = #{phoneNumber}")
-	int update(UserDto dto);
+	int updatePw(UserDto dto);
+	
+	@ResultMap("userResultMap")
+	@Update("UPDATE USER_TB SET USER_NAME = #{userName} WHERE PHONE_NUMBER = #{phoneNumber}")
+	int updateName(UserDto dto);
 }

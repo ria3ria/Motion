@@ -9,7 +9,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
-import java.util.Enumeration;
 import java.util.Map;
 
 import javax.crypto.Mac;
@@ -53,12 +52,17 @@ public class UserDaoImpl implements UserDao {
 	}
 
 	@Override
-	public int update(UserDto dto) {
+	public int updatePw(UserDto dto) {
 		if(dto.getUserPW() != null && !dto.getUserPW().isBlank()) {
 			String encodedPasasword = passwordEncoder.encode(dto.getUserPW());
 			dto.setUserPW(encodedPasasword);
 		}
-		return userMapper.update(dto);
+		return userMapper.updatePw(dto);
+	}
+	
+	@Override
+	public int updateName(UserDto dto) {
+		return userMapper.updateName(dto);
 	}
 	
 	@Override

@@ -10,7 +10,8 @@ public interface UserBiz {
 	public UserDto selectOneFromId(String userID);
 	public UserDto selectOneFromPhoneNumber(String phoneNumber);
 	public int insert(UserDto dto);
-	public int update(UserDto dto);
+	public int updatePw(UserDto dto);
+	public int updateName(UserDto dto);
 	
 	public boolean canUseId(UserDto dto);
 	public boolean canUsePhoneNumber(UserDto dto);

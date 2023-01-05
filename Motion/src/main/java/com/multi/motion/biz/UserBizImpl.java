@@ -32,8 +32,13 @@ public class UserBizImpl implements UserBiz {
 	}
 
 	@Override
-	public int update(UserDto dto) {
-		return dao.update(dto);
+	public int updatePw(UserDto dto) {
+		return dao.updatePw(dto);
+	}
+	
+	@Override
+	public int updateName(UserDto dto) {
+		return dao.updateName(dto);
 	}
 	
 	@Override
