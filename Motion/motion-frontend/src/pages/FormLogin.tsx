@@ -12,7 +12,7 @@ import PortalPopup from "../components/PortalPopup";
 import TooltipSuccess from "../components/TooltipSuccess";
 import styles from "./FormLogin.module.css";
 import { testId, testPw } from "../common/RegExp";
-import { login } from "../common/function";
+import { isLogin, login } from "../common/function";
   
 const FormLogin: FunctionComponent = () => {
   const navigate = useNavigate();
@@ -99,7 +99,15 @@ const FormLogin: FunctionComponent = () => {
     }
   }
 
+  async function checkState() {
+    if(await isLogin()) {
+      navigate("/table-audition");
+    }
+  }
+
   useEffect(() => {
+    checkState();
+
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]"
     );

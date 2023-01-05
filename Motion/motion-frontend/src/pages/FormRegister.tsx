@@ -340,7 +340,15 @@ const FormRegister: FunctionComponent = () => {
     });
   }
 
+  async function checkState() {
+    if(await isLogin()) {
+      navigate("/table-audition");
+    }
+  }
+
   useEffect(() => {
+    checkState();
+    
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]"
     );

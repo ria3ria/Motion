@@ -10,6 +10,8 @@ import TooltipError from "../components/TooltipError";
 import PortalPopup from "../components/PortalPopup";
 import TooltipSuccess from "../components/TooltipSuccess";
 import styles from "./FormUserInfo.module.css";
+import { testName } from "../common/RegExp";
+import { getUserInfo, isLogin, changeName as changeNameFunc } from "../common/function";
 
 const FormUserInfo: FunctionComponent = () => {
   const navigate = useNavigate();
@@ -55,11 +57,77 @@ const FormUserInfo: FunctionComponent = () => {
     navigate("/");
   }, [navigate]);
 
-  const changeName = () => {
-    
+  const [tooltipErrorMessage, setTooltipErrorMessage] = useState("");
+  const [tooltipSuccessMessage, setTooltipSuccessMessage] = useState("");
+  const [viewUserName, setViewUserName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [registeredDate, setRegisteredDate] = useState("");
+  const [userGrade, setUserGrade] = useState("");
+
+  const appendTooltip = (input:HTMLInputElement, tooltip: "error" | "success") => {
+    const tooltipError = document.getElementById("tooltip_error") as HTMLDivElement;
+    const tooltipSuccess = document.getElementById("tooltip_success") as HTMLDivElement;
+    const description = input.parentElement?.parentElement?.firstChild as HTMLDivElement;
+    closeTooltipErrorPopup();
+    closeTooltipSuccessPopup();
+    if(tooltip == "success") {
+      description.appendChild(tooltipSuccess);
+      tooltipSuccess.setAttribute("style", "display:inline-block");
+      tooltipError.setAttribute("style", "display:none");
+    }
+    else if(tooltip == "error") {
+      description.appendChild(tooltipError);
+      tooltipError.setAttribute("style", "display:inline-block");
+      tooltipSuccess.setAttribute("style", "display:none");
+      openTooltipErrorPopup();
+    }
+  }
+
+  const changeName = async() => {
+    const inputUserName = document.getElementById("userName") as HTMLInputElement;
+    const userName = inputUserName.value;
+    if(testName(userName)) {
+      setTooltipSuccessMessage("올바른 형식의 이름입니다.");
+      appendTooltip(inputUserName, "success");
+      if(await changeNameFunc(phoneNumber, userName)) {
+        window.location.reload();
+      }
+      else {
+        setTooltipErrorMessage("이름 변경에 실패하였습니다. 다시 시도해주세요.");
+        appendTooltip(inputUserName, "error");
+      }
+    }
+    else {
+      setTooltipErrorMessage("실명 또는 회사명을 입력해주세요. (2~30자리 한글,영문,숫자)");
+      appendTooltip(inputUserName, "error");
+    }
+  }
+
+  async function getInfo() {
+    if(await isLogin()) {
+      const userDto = await getUserInfo();
+      setViewUserName(userDto!["userName"]);
+      setPhoneNumber(userDto!["phoneNumber"]);
+      setRegisteredDate(new Date(userDto!["registeredDate"]).toLocaleString());
+      setUserGrade(userDto!["userGrade"]);
+      
+      if(userDto!["userGrade"] == "제작자") {
+        const myPost = document.getElementById("myPost") as HTMLSpanElement;
+        myPost.parentElement?.setAttribute("class", styles["textbuttonFormHelp"]);
+      }
+      else if(userDto!["userGrade"] == "아티스트") {
+        const artistProfile = document.getElementById("artistProfile") as HTMLSpanElement;
+        artistProfile.parentElement?.setAttribute("class", styles["textbuttonFormHelp"]);
+      }
+    }
+    else {
+      navigate("/form-login");
+    }
   }
 
   useEffect(() => {
+    getInfo();
+
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]"
     );
@@ -109,18 +177,20 @@ const FormUserInfo: FunctionComponent = () => {
               </div>
             </div>
             <div className={styles.subtitle2}>
-              <div className={styles.textbuttonFormHelp1} id="producerButton">
+              <div className={styles.textbuttonFormHelp1}>
                 <b
                   className={styles.findid}
+                  id="myPost"
                   onClick={onMyPostClick}
                   data-animate-on-scroll
                 >
                   공고 글 관리
                 </b>
               </div>
-              <div className={styles.textbuttonFormHelp1} id="artistButton">
+              <div className={styles.textbuttonFormHelp1}>
                 <b
                   className={styles.findid}
+                  id="artistProfile"
                   onClick={onArtistProfileClick}
                   data-animate-on-scroll
                 >
@@ -141,7 +211,7 @@ const FormUserInfo: FunctionComponent = () => {
                     id="viewUserName"
                     data-animate-on-scroll
                   >
-                    홍길동
+                    {viewUserName}
                   </b>
                 </div>
               </div>
@@ -155,7 +225,7 @@ const FormUserInfo: FunctionComponent = () => {
                     id="phoneNumber"
                     data-animate-on-scroll
                   >
-                    01012345678
+                    {phoneNumber}
                   </b>
                 </div>
               </div>
@@ -226,10 +296,10 @@ const FormUserInfo: FunctionComponent = () => {
                 <div className={styles.board}>
                   <b
                     className={styles.text1}
-                    id="registered"
+                    id="registeredDate"
                     data-animate-on-scroll
                   >
-                    2003-01-01
+                    {registeredDate}
                   </b>
                 </div>
               </div>
@@ -243,7 +313,7 @@ const FormUserInfo: FunctionComponent = () => {
                     id="userGrade"
                     data-animate-on-scroll
                   >
-                    제작자
+                    {userGrade}
                   </b>
                 </div>
               </div>
@@ -286,7 +356,7 @@ const FormUserInfo: FunctionComponent = () => {
           relativeLayerRef={iconErrorRef}
           onOutsideClick={closeTooltipErrorPopup}
         >
-          <TooltipError onClose={closeTooltipErrorPopup} />
+          <TooltipError onClose={closeTooltipErrorPopup} message={tooltipErrorMessage}/>
         </PortalPopup>
       )}
       {isTooltipSuccessPopupOpen && (
@@ -297,7 +367,7 @@ const FormUserInfo: FunctionComponent = () => {
           relativeLayerRef={iconSuccessRef}
           onOutsideClick={closeTooltipSuccessPopup}
         >
-          <TooltipSuccess onClose={closeTooltipSuccessPopup} />
+          <TooltipSuccess onClose={closeTooltipSuccessPopup} message={tooltipSuccessMessage}/>
         </PortalPopup>
       )}
     </>

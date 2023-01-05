@@ -62,6 +62,21 @@ export const changePw = async(phoneNumber: string, userPW: string, digitCode: st
     return result;
 }
 
+export const changeName = async(phoneNumber: string, userName: string) => {
+    let result = false;
+    await instance.post("/api/user/change-name", null,{ params: {
+        phoneNumber, userName
+    }}).then((response) => {
+        if(response.data) {
+            result = true;
+        }
+        else {
+            result = false;
+        }
+    })
+    return result;
+}
+
 export const sendDigitCode = async(phoneNumber: string, type: DigitCodeType) => {
     let result = false;
     await instance.post("/api/user/send-digitcode", null,{ params: {
@@ -109,7 +124,7 @@ export const login = async(userID: string, userPW: string) => {
 
 export const isLogin = async() => {
     let result = false;
-    await instance.post("/api/user/islogin"
+    await instance.post("/api/user/is-login"
     ).then((response) => {
         if(response.data) {
             result = true;
@@ -117,6 +132,15 @@ export const isLogin = async() => {
         else {
             result = false;
         }
+    })
+    return result;
+}
+
+export const getUserInfo = async() => {
+    let result;
+    await instance.post("/api/user/get-info"
+    ).then((response) => {
+        result = response.data;
     })
     return result;
 }

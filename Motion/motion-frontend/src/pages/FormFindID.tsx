@@ -9,7 +9,7 @@ import {
   MouseEventHandler,
 } from "react";
 import { useNavigate } from "react-router-dom";
-import { findId, sendDigitCode } from "../common/function";
+import { findId, isLogin, sendDigitCode } from "../common/function";
 import { testPhoneNumber } from "../common/RegExp";
 import PopupResultFindID from "../components/PopupResultFindID";
 import PortalPopup from "../components/PortalPopup";
@@ -175,8 +175,16 @@ const FormFindID: FunctionComponent = () => {
       openPopupResultFindID();
     }
   }
+
+  async function checkState() {
+    if(await isLogin()) {
+      navigate("/table-audition");
+    }
+  }
   
   useEffect(() => {
+    checkState();
+    
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]"
     );
