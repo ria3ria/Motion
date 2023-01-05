@@ -1,0 +1,101 @@
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.icon {
+  position: absolute;
+  height: 53.33%;
+  width: 53.33%;
+  top: 23.33%;
+  right: 23.33%;
+  bottom: 23.33%;
+  left: 23.33%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.mediaStrip02 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--blue-5);
+  position: absolute;
+  top: 29px;
+  left: 0;
+  border-radius: var(--br-xl);
+  width: 60px;
+  height: 60px;
+}
+.mediaStrip02:hover {
+  background-color: var(--blue-6);
+}
+.div1 {
+  position: absolute;
+  top: 0;
+  left: 18.33%;
+  line-height: 24px;
+  font-weight: 100;
+}
+.div,
+.icon1 {
+  position: absolute;
+  top: 94px;
+  left: 0;
+  width: 60px;
+  height: 89px;
+}
+.icon1 {
+  height: 53.82%;
+  width: 53.33%;
+  top: 22.33%;
+  right: 23.33%;
+  bottom: 23.84%;
+  left: 23.33%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.div2,
+.microphone02 {
+  position: absolute;
+  left: 0;
+  width: 60px;
+}
+.microphone02 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  top: 29px;
+  border-radius: var(--br-xl);
+  height: 60px;
+}
+.microphone02,
+.microphone02:hover {
+  background-color: var(--blue-5);
+}
+.div2 {
+  top: 0;
+  height: 89px;
+}
+.popupField {
+  position: relative;
+  width: 60px;
+  height: 183px;
+  opacity: 0;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--neutral-10);
+  font-family: var(--font-be-vietnam);
+}
+.popupField.animate {
+  animation: 0.5s ease 0s 1 normal forwards slide-in-top;
+}

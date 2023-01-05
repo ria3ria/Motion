@@ -1,0 +1,407 @@
+@keyframes fade-in-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-left {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.title1 {
+  font-size: var(--font-size-4xl);
+  color: var(--color-black);
+}
+.title1.animate {
+  animation: 1s ease 0s 1 normal forwards fade-in-bottom;
+}
+.resetProfile,
+.title1 {
+  position: relative;
+  opacity: 0;
+}
+.resetProfile.animate {
+  animation: 1s ease 0.5s 1 normal forwards fade-in-left;
+}
+.resetProfile:hover {
+  color: var(--blue-6);
+}
+.subtitle1,
+.textbuttonFormHelp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.subtitle1 {
+  padding: var(--padding-4xs) 0 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.guideProfile {
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+}
+.guideProfile.animate {
+  animation: 1s ease 0.5s 1 normal forwards fade-in-left;
+}
+.guideProfile:hover {
+  color: var(--blue-6);
+}
+.subtitle2,
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.title {
+  flex-direction: column;
+}
+.label {
+  cursor: pointer;
+  position: relative;
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  font-family: var(--font-be-vietnam);
+  color: var(--color-gray-400);
+  text-align: left;
+  opacity: 0;
+}
+.input.animate,
+.label.animate {
+  animation: 1s ease 0.5s 1 normal forwards fade-in-left;
+}
+.description {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.input {
+  border: 0;
+  font-family: var(--font-be-vietnam);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  flex: 1;
+  position: relative;
+  font-weight: 700;
+  color: var(--color-gray-400);
+  text-align: left;
+  cursor: auto;
+  opacity: 0;
+  outline: 0;
+}
+.board {
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-sm);
+  border: 1px solid var(--blue-10);
+  display: flex;
+  flex-direction: row;
+  padding: 0 var(--padding-lg);
+  align-items: center;
+  justify-content: flex-start;
+}
+.inputDigitcode,
+.inputPhonenumber {
+  width: 276px;
+  height: 114px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.inputDigitcode {
+  width: 186px;
+}
+.text {
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 35px;
+  font-weight: 100;
+  font-family: var(--font-be-vietnam);
+  color: var(--color-white);
+  text-align: center;
+}
+.buttonSendSms,
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.buttonSendSms {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-sm) var(--padding-xl) var(--padding-xl);
+  background-color: var(--blue-5);
+  border-radius: var(--br-xs);
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -2px;
+}
+.buttonSendSms:hover {
+  background-color: var(--color-indigo-300);
+}
+.row {
+  align-self: stretch;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: var(--gap-lg);
+}
+.board2,
+.inputBirthyear {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.board2 {
+  align-self: stretch;
+  border-radius: var(--br-sm);
+  border: 1px solid var(--blue-10);
+  box-sizing: border-box;
+  height: 75px;
+  flex-direction: row;
+  padding: 0 var(--padding-lg);
+  align-items: center;
+}
+.inputBirthyear {
+  width: 160.67px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-xs);
+}
+.text1,
+.text2 {
+  position: relative;
+  font-size: var(--font-size-base);
+  font-family: var(--font-be-vietnam);
+  color: var(--color-gray-400);
+  text-align: left;
+  opacity: 0;
+}
+.text1.animate,
+.text2.animate {
+  animation: 1s ease 0.5s 1 normal forwards fade-in-left;
+}
+.text2 {
+  font-size: var(--font-size-lg);
+  font-weight: 100;
+  color: var(--blue-5);
+  text-align: center;
+}
+.buttonFemale,
+.buttonMale {
+  cursor: pointer;
+  border: 1px solid var(--blue-10);
+  padding: var(--padding-lg);
+  background-color: transparent;
+  border-radius: var(--br-xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.buttonFemale:hover,
+.buttonMale:hover {
+  background-color: var(--blue-6);
+  border: 1px solid var(--blue-6);
+  box-sizing: border-box;
+}
+.buttonFemale:hover .text2,
+.buttonMale:hover .text2 {
+  color: var(--color-white);
+}
+.inputHiddenGender {
+  border: 0;
+  display: none;
+  font-family: var(--font-be-vietnam);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  position: relative;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--color-gray-400);
+  text-align: left;
+  cursor: default;
+  opacity: 0;
+}
+.inputHiddenCountry.animate,
+.inputHiddenGender.animate {
+  animation: 1s ease 0.5s 1 normal forwards fade-in-left;
+}
+.button,
+.buttonSelectMultiple {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-lg);
+}
+.buttonSelectMultiple {
+  width: 146px;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.inputSns,
+.row1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: var(--gap-lg);
+}
+.inputSns {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.buttonCountry,
+.inputHiddenCountry {
+  background-color: transparent;
+  align-items: center;
+}
+.inputHiddenCountry {
+  border: 0;
+  display: none;
+  font-family: var(--font-be-vietnam);
+  font-size: var(--font-size-base);
+  flex: 1;
+  position: relative;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--color-gray-400);
+  text-align: left;
+  width: 132px;
+  cursor: default;
+  opacity: 0;
+}
+.buttonCountry {
+  cursor: pointer;
+  border: 1px solid var(--blue-10);
+  padding: var(--padding-lg);
+  border-radius: var(--br-xs);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.buttonCountry:hover {
+  background-color: var(--blue-6);
+  border: 1px solid var(--blue-6);
+  box-sizing: border-box;
+}
+.buttonSelect,
+.inputUrl {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.inputUrl {
+  flex: 1;
+  height: 114px;
+}
+.text7 {
+  position: relative;
+  font-size: var(--font-size-2xl);
+  line-height: 35px;
+  font-family: var(--font-be-vietnam);
+  color: var(--color-white);
+  text-align: center;
+}
+.buttonAudition {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-sm) var(--padding-xl) var(--padding-xl);
+  background-color: var(--blue-5);
+  align-self: stretch;
+  border-radius: var(--br-xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -2px;
+}
+.buttonAudition:hover {
+  background-color: var(--color-indigo-300);
+}
+.form,
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xs);
+}
+.form {
+  width: 688px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.right {
+  position: absolute;
+  top: 93px;
+  left: 1117px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.artistprofileFormImage1Icon {
+  position: absolute;
+  top: 184px;
+  left: 117px;
+  width: 800px;
+  height: 680px;
+  object-fit: cover;
+}
+.span {
+  color: var(--blue-5);
+}
+.p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.p1 {
+  margin: 0;
+}
+.cover {
+  position: relative;
+  line-height: 123%;
+}
+.textbuttonCorver {
+  position: absolute;
+  top: 55px;
+  left: 55px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+}
+.formArtistProfile {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 937px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--blue-5);
+  font-family: var(--font-be-vietnam);
+}

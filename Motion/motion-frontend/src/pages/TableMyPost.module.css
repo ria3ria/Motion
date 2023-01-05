@@ -1,0 +1,584 @@
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.span {
+  color: var(--blue-5);
+}
+.span1 {
+  color: var(--color-black);
+}
+.p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.p1 {
+  margin: 0;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 30px;
+  font-weight: 700;
+  font-family: var(--font-be-vietnam);
+  text-align: left;
+  display: inline-block;
+  letter-spacing: -4px;
+}
+.title {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.line {
+  position: absolute;
+  width: 100.05%;
+  right: -0.03%;
+  bottom: -0.5px;
+  left: -0.03%;
+  border-top: 1px solid var(--neutral-6);
+  box-sizing: border-box;
+  height: 1px;
+}
+.label {
+  position: relative;
+  line-height: 24px;
+  font-weight: 100;
+}
+.contents1 {
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-7xs) var(--padding-sm);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.line1 {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--blue-6);
+  height: 4px;
+  flex-shrink: 0;
+}
+.buttons,
+.tabButton {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.tabButton {
+  overflow: hidden;
+  flex-direction: column;
+}
+.buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-direction: row;
+  padding: var(--padding-5xs) 0 0;
+  gap: var(--gap-xl);
+}
+.tabs {
+  align-self: stretch;
+  position: relative;
+  height: 48px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.navigation {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.icon,
+.label3 {
+  position: relative;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.label3 {
+  font-size: var(--font-size-xs);
+  line-height: 24px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: var(--font-be-vietnam);
+  color: var(--color-white);
+  text-align: center;
+}
+.actionButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--padding-xl) 0 var(--padding-sm);
+  background-color: var(--blue-6);
+  border-radius: var(--br-xs);
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-2xs);
+}
+.actionButton:hover {
+  background-color: var(--color-indigo-300);
+}
+.fieldText {
+  border: 0;
+  font-family: var(--font-be-vietnam);
+  font-size: var(--font-size-sm);
+  background-color: transparent;
+  flex: 1;
+  position: relative;
+  line-height: 28px;
+  color: var(--neutral-6);
+  text-align: left;
+  outline: 0;
+}
+.contents4 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-5xs);
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-md);
+}
+.line2 {
+  align-self: stretch;
+  position: relative;
+  border-top: 1px solid var(--neutral-6);
+  box-sizing: border-box;
+  height: 1px;
+  flex-shrink: 0;
+}
+.search {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.rectangle {
+  cursor: pointer;
+  border: 1px solid var(--blue-10);
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  height: 75%;
+  width: 75%;
+  top: 12.5%;
+  right: 12.5%;
+  bottom: 12.5%;
+  left: 12.5%;
+  border-radius: var(--br-xs);
+  box-sizing: border-box;
+}
+.rectangle:hover {
+  background-color: var(--blue-6);
+}
+.vectorIcon {
+  position: absolute;
+  height: 43.21%;
+  width: 55.89%;
+  top: 30.39%;
+  right: 22.05%;
+  bottom: 26.4%;
+  left: 22.05%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.checkBoxActive {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.bodyText {
+  position: relative;
+  line-height: 24px;
+  font-weight: 300;
+}
+.checkBox {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-5xs) var(--padding-6xs);
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-sm);
+}
+.div {
+  position: relative;
+  font-size: var(--font-size-xs);
+  line-height: 24px;
+  font-weight: 100;
+  font-family: var(--font-be-vietnam);
+  color: var(--color-white);
+  text-align: center;
+}
+.gotoTableArtistButton,
+.options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.gotoTableArtistButton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-4xs) var(--padding-sm);
+  background-color: var(--blue-6);
+  border-radius: var(--br-xs);
+  justify-content: center;
+  letter-spacing: -2px;
+}
+.gotoTableArtistButton:hover {
+  background-color: var(--color-indigo-300);
+}
+.options {
+  align-self: stretch;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.captionText {
+  position: relative;
+  line-height: 18px;
+}
+.select {
+  width: 92px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.sort {
+  height: 32px;
+  gap: var(--gap-sm);
+}
+.column,
+.select1,
+.sort {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.column {
+  align-self: stretch;
+  width: 150px;
+  flex-shrink: 0;
+  overflow: hidden;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.select1 {
+  flex: 1;
+  height: 32px;
+  gap: var(--gap-3xs);
+}
+.column1 {
+  align-self: stretch;
+  width: 100px;
+  flex-shrink: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.column1,
+.column2,
+.column3,
+.column4 {
+  display: flex;
+  flex-direction: row;
+  padding: 0 var(--padding-sm) 0 var(--padding-xl);
+  align-items: center;
+  justify-content: flex-start;
+}
+.column2 {
+  align-self: stretch;
+  flex: 1;
+  overflow: hidden;
+}
+.column3,
+.column4 {
+  box-sizing: border-box;
+}
+.column3 {
+  align-self: stretch;
+  width: 240px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.column4 {
+  width: 150px;
+}
+.column4,
+.column5,
+.headers {
+  align-self: stretch;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.column5 {
+  width: 50px;
+}
+.headers {
+  background-color: var(--blue-1);
+  height: 54px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.bodyText1,
+.column6 {
+  justify-content: center;
+}
+.bodyText1 {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+}
+.column6 {
+  width: 150px;
+  flex-shrink: 0;
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-xl);
+  box-sizing: border-box;
+  text-align: center;
+}
+.bodyText2,
+.column6,
+.column7 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.bodyText2 {
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+}
+.column7 {
+  width: 100px;
+  flex-shrink: 0;
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-xl);
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+.bodyText3 {
+  position: relative;
+  line-height: 24px;
+  cursor: pointer;
+}
+.column8,
+.column9 {
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-xl);
+  justify-content: flex-start;
+}
+.column8 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.column9 {
+  width: 240px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+.bodyText5,
+.column10,
+.column9 {
+  display: flex;
+  align-items: center;
+}
+.bodyText5 {
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+  height: 24px;
+}
+.column10 {
+  align-self: stretch;
+  width: 150px;
+  flex-shrink: 0;
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-xl);
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+.iconButton {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+.column11,
+.row,
+.rows {
+  align-self: stretch;
+  display: flex;
+}
+.column11 {
+  width: 50px;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: var(--padding-sm);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.row,
+.rows {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.row {
+  height: 54px;
+  flex-shrink: 0;
+  flex-direction: row;
+}
+.rows {
+  background-color: var(--color-white);
+  flex-direction: column;
+  padding: var(--padding-5xs) 0;
+}
+.subhead {
+  position: relative;
+  line-height: 18px;
+  font-weight: 500;
+}
+.field,
+.select5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.select5 {
+  height: 32px;
+  gap: var(--gap-3xs);
+}
+.field {
+  align-self: stretch;
+  padding: 0 var(--padding-xl);
+}
+.link {
+  width: 40px;
+  height: 32px;
+  flex-shrink: 0;
+  padding: 0 var(--padding-5xs);
+  box-sizing: border-box;
+  color: var(--blue-3);
+}
+.buttons1,
+.link,
+.link1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.link1 {
+  width: 40px;
+  height: 32px;
+  flex-shrink: 0;
+  padding: 0 var(--padding-5xs);
+  box-sizing: border-box;
+}
+.buttons1 {
+  align-self: stretch;
+  flex: 1;
+  padding: 0 var(--padding-6xl) 0 0;
+  gap: var(--gap-md);
+}
+.pagination,
+.space,
+.table {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+}
+.pagination {
+  background-color: var(--blue-8);
+  height: 54px;
+  flex-shrink: 0;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-md);
+  color: var(--color-white);
+}
+.space,
+.table {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.table {
+  border: 1px solid var(--blue-8);
+  overflow: hidden;
+  font-size: var(--font-size-xs);
+}
+.space {
+  gap: var(--gap-lg);
+}
+.contents,
+.tableMyPost {
+  height: 937px;
+  overflow: hidden;
+}
+.contents {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-3xl) var(--padding-3xl) var(--padding-xl);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-lg);
+}
+.tableMyPost {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  opacity: 0;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--neutral-10);
+  font-family: var(--font-be-vietnam);
+}
+.tableMyPost.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-top;
+}

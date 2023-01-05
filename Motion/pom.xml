@@ -15,7 +15,7 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
-		<frontend-src-dir>${project.basedir}/../../nodejs/${project.artifactId}</frontend-src-dir>
+		<frontend-src-dir>${project.basedir}/motion-frontend</frontend-src-dir>
 		<frontend-maven-plugin.version>1.12.1</frontend-maven-plugin.version>
 	</properties>
 	<dependencies>

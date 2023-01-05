@@ -1,0 +1,50 @@
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.registerSuccessImage1Icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 778px;
+  height: 597px;
+  object-fit: cover;
+}
+.title {
+  position: relative;
+  -webkit-text-stroke: 3px #000;
+  opacity: 1;
+}
+.title.animate {
+  animation: 1s ease 1s infinite normal forwards scale-up;
+}
+.titleWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 778px;
+  height: 597px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-4xl) 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.popupRegisterSuccess {
+  position: relative;
+  width: 778px;
+  height: 597px;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: left;
+  font-size: var(--font-size-4xl);
+  color: var(--color-white);
+  font-family: var(--font-be-vietnam);
+}

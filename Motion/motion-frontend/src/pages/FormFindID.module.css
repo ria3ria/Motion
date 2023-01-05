@@ -1,0 +1,277 @@
+@keyframes fade-in-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-left {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.title1 {
+  font-size: var(--font-size-4xl);
+  color: var(--color-black);
+}
+.title1.animate {
+  animation: 1s ease 0s 1 normal forwards fade-in-bottom;
+}
+.text,
+.title1 {
+  position: relative;
+  opacity: 0;
+}
+.register.animate,
+.text.animate {
+  animation: 1s ease 0.5s 1 normal forwards fade-in-left;
+}
+.textFormHelp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.register {
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+}
+.register:hover {
+  color: var(--blue-6);
+}
+.textbuttonFormHelp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-5);
+}
+.subtitle1 {
+  flex-direction: row;
+  padding: var(--padding-4xs) 0 0;
+  gap: var(--gap-lg);
+}
+.subtitle1,
+.subtitle2,
+.title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.subtitle2 {
+  flex-direction: row;
+  gap: var(--gap-lg);
+}
+.title {
+  flex-direction: column;
+}
+.label {
+  cursor: pointer;
+  position: relative;
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  font-family: var(--font-be-vietnam);
+  color: var(--color-gray-400);
+  text-align: left;
+  opacity: 0;
+}
+.input.animate,
+.label.animate {
+  animation: 1s ease 0.5s 1 normal forwards fade-in-left;
+}
+.description {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.input {
+  border: 0;
+  font-family: var(--font-be-vietnam);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  flex: 1;
+  position: relative;
+  font-weight: 700;
+  color: var(--color-gray-400);
+  text-align: left;
+  cursor: auto;
+  opacity: 0;
+  outline: 0;
+}
+.board,
+.inputPhonenumber {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+.board {
+  align-self: stretch;
+  border-radius: var(--br-sm);
+  border: 1px solid var(--blue-10);
+  flex-direction: row;
+  padding: 0 var(--padding-lg);
+  align-items: center;
+}
+.inputPhonenumber {
+  height: 114px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-xs);
+}
+.text2 {
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 35px;
+  font-weight: 100;
+  font-family: var(--font-be-vietnam);
+  color: var(--color-white);
+  text-align: center;
+}
+.buttonSendSms,
+.row,
+.row1 {
+  display: flex;
+  flex-direction: row;
+}
+.buttonSendSms {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-sm) var(--padding-xl) var(--padding-xl);
+  background-color: var(--blue-5);
+  border-radius: var(--br-xs);
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -2px;
+}
+.buttonFindId:hover,
+.buttonSendSms:hover {
+  background-color: var(--color-indigo-300);
+}
+.row,
+.row1 {
+  width: 688px;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.row {
+  gap: var(--gap-lg);
+}
+.row1 {
+  padding: 0 0 var(--padding-7xl);
+  box-sizing: border-box;
+}
+.text3 {
+  position: relative;
+  font-size: var(--font-size-2xl);
+  line-height: 35px;
+  font-family: var(--font-be-vietnam);
+  color: var(--color-white);
+  text-align: center;
+}
+.buttonFindId,
+.form {
+  display: flex;
+  align-items: center;
+}
+.buttonFindId {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-sm) var(--padding-xl) var(--padding-xl);
+  background-color: var(--blue-5);
+  align-self: stretch;
+  border-radius: var(--br-xs);
+  flex-direction: row;
+  justify-content: center;
+  letter-spacing: -2px;
+}
+.form {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.iconError1 {
+  position: absolute;
+  height: 83.33%;
+  width: 83.33%;
+  top: 8.33%;
+  right: 8.33%;
+  bottom: 8.33%;
+  left: 8.33%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.iconError {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: none;
+  cursor: pointer;
+}
+.right {
+  position: absolute;
+  top: 93px;
+  left: 1117px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-xs);
+}
+.findIdFormImage1Icon {
+  position: absolute;
+  top: 184px;
+  left: 117px;
+  width: 800px;
+  height: 680px;
+  object-fit: cover;
+}
+.span {
+  color: var(--blue-5);
+}
+.p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.p1 {
+  margin: 0;
+}
+.cover {
+  position: relative;
+  line-height: 123%;
+}
+.textbuttonCorver {
+  position: absolute;
+  top: 55px;
+  left: 55px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+}
+.formFindId {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 937px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--neutral-6);
+  font-family: var(--font-be-vietnam);
+}

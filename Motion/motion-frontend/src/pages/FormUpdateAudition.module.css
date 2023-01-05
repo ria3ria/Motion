@@ -1,0 +1,533 @@
+.board {
+  position: absolute;
+  top: 40px;
+  left: -1px;
+  border-radius: var(--br-sm);
+  border: 1px solid var(--blue-10);
+  box-sizing: border-box;
+  width: 1297px;
+  height: 624px;
+}
+.input {
+  border: 0;
+  font-weight: 100;
+  font-family: var(--font-be-vietnam);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  height: 90.8%;
+  width: 98.46%;
+  top: 7.69%;
+  left: 0.77%;
+  line-height: 24px;
+  color: var(--color-gray-400);
+  text-align: left;
+  display: inline-block;
+  outline: 0;
+}
+.div,
+.div1,
+.input {
+  position: absolute;
+}
+.div1 {
+  top: 0;
+  left: 0.23%;
+  line-height: 24px;
+  font-weight: 100;
+}
+.div {
+  top: 234px;
+  left: 585px;
+  width: 1295px;
+  height: 663px;
+}
+.api {
+  top: 65.64%;
+  left: 5.89%;
+  line-height: 24px;
+  font-weight: 100;
+}
+.api,
+.div2,
+.line {
+  position: absolute;
+}
+.line {
+  width: 17.24%;
+  right: 70.55%;
+  bottom: 408.5px;
+  left: 12.21%;
+  border-top: 1px solid var(--neutral-10);
+  box-sizing: border-box;
+  height: 1px;
+}
+.div2 {
+  top: calc(50% + 38.5px);
+  left: 2.6%;
+  line-height: 24px;
+  font-weight: 300;
+}
+.rectangle {
+  position: absolute;
+  height: 75%;
+  width: 75%;
+  top: 12.5%;
+  right: 12.5%;
+  bottom: 12.5%;
+  left: 12.5%;
+  border-radius: var(--br-xs);
+  background-color: var(--blue-5);
+}
+.vectorIcon {
+  position: absolute;
+  height: 43.21%;
+  width: 55.89%;
+  top: 30.39%;
+  right: 22.05%;
+  bottom: 26.4%;
+  left: 22.05%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.checkBoxActive {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.url {
+  position: relative;
+  line-height: 24px;
+  font-weight: 300;
+}
+.checkBox {
+  position: absolute;
+  top: 437px;
+  left: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-5xs);
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-sm);
+}
+.board1,
+.datePicker {
+  position: absolute;
+  top: 362px;
+  left: 130px;
+}
+.board1 {
+  top: 39px;
+  left: 87px;
+  border-radius: var(--br-sm);
+  border: 1px solid var(--blue-10);
+  box-sizing: border-box;
+  width: 54px;
+  height: 44px;
+}
+.input1 {
+  border: 0;
+  font-weight: 300;
+  font-family: var(--font-be-vietnam);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  height: 28.92%;
+  width: 24.82%;
+  top: 59.04%;
+  left: 68.79%;
+  line-height: 24px;
+  color: var(--color-gray-400);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 0;
+}
+.b,
+.board2,
+.input1 {
+  position: absolute;
+}
+.b {
+  top: 59.04%;
+  left: 45.39%;
+  line-height: 24px;
+}
+.board2 {
+  top: 39px;
+  left: 0;
+  border-radius: var(--br-sm);
+  border: 1px solid var(--blue-10);
+  box-sizing: border-box;
+  width: 54px;
+  height: 44px;
+}
+.div4,
+.input2 {
+  position: absolute;
+  line-height: 24px;
+}
+.input2 {
+  border: 0;
+  font-weight: 300;
+  font-family: var(--font-be-vietnam);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  height: 28.92%;
+  width: 24.82%;
+  top: 59.04%;
+  left: 7.09%;
+  color: var(--color-gray-400);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 0;
+}
+.div4 {
+  top: 0;
+  left: 0;
+  font-weight: 100;
+}
+.board5,
+.div3,
+.div5 {
+  position: absolute;
+  top: 237px;
+  left: 301px;
+  width: 141px;
+  height: 83px;
+}
+.board5,
+.div5 {
+  left: 130px;
+}
+.board5 {
+  top: 38px;
+  left: -1px;
+  border-radius: var(--br-sm);
+  border: 1px solid var(--blue-10);
+  box-sizing: border-box;
+  width: 1297px;
+  height: 46px;
+}
+.div8,
+.input5 {
+  position: absolute;
+  line-height: 24px;
+}
+.input5 {
+  border: 0;
+  font-weight: 300;
+  font-family: var(--font-be-vietnam);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  height: 28.92%;
+  width: 98.46%;
+  top: 59.04%;
+  left: 0.77%;
+  color: var(--color-gray-400);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  outline: 0;
+}
+.div8 {
+  top: 14.46%;
+  left: 0.17%;
+  font-weight: 100;
+}
+.div7,
+.icon {
+  position: absolute;
+  top: 121px;
+  left: 585px;
+  width: 1295px;
+  height: 83px;
+}
+.icon {
+  height: 54%;
+  width: 54%;
+  top: 23%;
+  right: 23%;
+  bottom: 23%;
+  left: 23%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.mediaStrip02 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--blue-5);
+  position: absolute;
+  top: 34px;
+  left: 0;
+  border-radius: var(--br-xl);
+  width: 50px;
+  height: 50px;
+}
+.mediaStrip02:hover {
+  background-color: var(--blue-6);
+}
+.mediaStrip02:focus {
+  background-color: var(--blue-6);
+}
+.div10 {
+  top: 0;
+  left: 12%;
+  line-height: 24px;
+  font-weight: 100;
+}
+.div10,
+.div9,
+.line1 {
+  position: absolute;
+}
+.div9 {
+  top: 120px;
+  left: 40px;
+  width: 50px;
+  height: 84px;
+}
+.line1 {
+  width: 100.05%;
+  right: -0.03%;
+  bottom: 836.5px;
+  left: -0.03%;
+  border-top: 1px solid var(--blue-8);
+  box-sizing: border-box;
+  height: 1px;
+}
+.div11 {
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 24px;
+  font-weight: 100;
+  font-family: var(--font-be-vietnam);
+  color: var(--color-white);
+  text-align: center;
+}
+.backButton,
+.gotoAuditionTableButton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-sm);
+  background-color: var(--blue-5);
+  position: absolute;
+  top: 25px;
+  left: 1811px;
+  border-radius: var(--br-xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -2px;
+}
+.backButton:hover,
+.countryButton:hover,
+.femaleButton:hover,
+.gotoAuditionTableButton:hover,
+.maleButton:hover {
+  background-color: var(--color-indigo-300);
+}
+.gotoAuditionTableButton {
+  left: 1722px;
+}
+.span {
+  color: var(--blue-5);
+}
+.span1 {
+  color: var(--color-black);
+}
+.p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.p1 {
+  margin: 0;
+}
+.button,
+.femaleButton {
+  cursor: pointer;
+  border: 0;
+  position: absolute;
+}
+.button {
+  padding: 0;
+  background-color: transparent;
+  top: 20px;
+  left: 40px;
+  font-size: var(--font-size-lg);
+  line-height: 30px;
+  font-weight: 700;
+  font-family: var(--font-be-vietnam);
+  text-align: left;
+  display: inline-block;
+  letter-spacing: -4px;
+}
+.femaleButton {
+  padding: var(--padding-3xs) var(--padding-sm);
+  background-color: var(--blue-5);
+  top: 38px;
+  left: 61px;
+  border-radius: var(--br-xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -2px;
+}
+.div15 {
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 24px;
+  font-weight: 100;
+  font-family: var(--font-be-vietnam);
+  color: var(--blue-5);
+  text-align: center;
+}
+.maleButton {
+  cursor: pointer;
+  border: 1px solid var(--neutral-10);
+  padding: var(--padding-3xs) var(--padding-sm);
+  background-color: transparent;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  border-radius: var(--br-xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -2px;
+}
+.board6,
+.div13 {
+  position: absolute;
+  top: 121px;
+  left: 281px;
+  width: 112px;
+  height: 86px;
+}
+.board6 {
+  top: 39px;
+  left: 81px;
+  border-radius: var(--br-sm);
+  border: 1px solid var(--blue-10);
+  box-sizing: border-box;
+  width: 50px;
+  height: 44px;
+}
+.b2,
+.input6 {
+  position: absolute;
+  top: 59.04%;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+}
+.input6 {
+  border: 0;
+  font-weight: 300;
+  font-family: var(--font-be-vietnam);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  height: 28.92%;
+  width: 22.9%;
+  left: 69.47%;
+  color: var(--color-gray-400);
+  text-align: center;
+  justify-content: center;
+  outline: 0;
+}
+.b2 {
+  width: 8.4%;
+  left: 45.8%;
+}
+.board7 {
+  top: 39px;
+  left: 0;
+  border-radius: var(--br-sm);
+  border: 1px solid var(--blue-10);
+  box-sizing: border-box;
+  width: 50px;
+  height: 44px;
+}
+.board7,
+.div17,
+.input7 {
+  position: absolute;
+}
+.input7 {
+  border: 0;
+  font-weight: 300;
+  font-family: var(--font-be-vietnam);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  height: 28.92%;
+  width: 22.9%;
+  top: 59.04%;
+  left: 7.63%;
+  line-height: 24px;
+  color: var(--color-gray-400);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 0;
+}
+.div17 {
+  top: 124px;
+  left: 130px;
+  width: 131px;
+  height: 83px;
+}
+.countryButton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs) var(--padding-sm);
+  background-color: var(--blue-5);
+  top: 38px;
+  left: 0;
+  border-radius: var(--br-xs);
+  width: 152px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -2px;
+}
+.countryButton,
+.div19,
+.div21 {
+  position: absolute;
+}
+.div21 {
+  top: 0;
+  left: 0.65%;
+  line-height: 24px;
+  font-weight: 100;
+}
+.div19 {
+  top: 121px;
+  left: 413px;
+  width: 152px;
+  height: 86px;
+}
+.formUpdateAudition {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 937px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--neutral-10);
+  font-family: var(--font-be-vietnam);
+}

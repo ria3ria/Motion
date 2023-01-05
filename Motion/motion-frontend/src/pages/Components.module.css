@@ -1,0 +1,444 @@
+@keyframes fade-in-left {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.span {
+  color: var(--blue-5);
+}
+.p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.p1 {
+  margin: 0;
+}
+.cover {
+  position: relative;
+  line-height: 123%;
+}
+.textbuttonCorver {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+}
+.text {
+  position: relative;
+  opacity: 0;
+}
+.text.animate,
+.text1.animate {
+  animation: 1s ease 0.5s 1 normal forwards fade-in-left;
+}
+.textFormHelp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xl);
+  color: var(--neutral-6);
+}
+.text1 {
+  position: relative;
+  opacity: 0;
+}
+.text1:hover {
+  color: var(--blue-6);
+}
+.text2,
+.textbuttonFormHelp {
+  font-size: var(--font-size-xl);
+}
+.textbuttonFormHelp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-5);
+}
+.text2 {
+  position: relative;
+  font-family: var(--font-be-vietnam);
+  color: var(--color-white);
+  text-align: center;
+}
+.button1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-xl) var(--padding-3xs);
+  background-color: var(--blue-6);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button1:hover {
+  background-color: var(--color-indigo-300);
+}
+.text3 {
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 35px;
+  font-weight: 100;
+  font-family: var(--font-be-vietnam);
+  color: var(--blue-5);
+  text-align: center;
+  opacity: 0;
+}
+.text3.animate {
+  animation: 1s ease 0.5s 1 normal forwards fade-in-left;
+}
+.button2 {
+  cursor: pointer;
+  border: 1px solid var(--blue-10);
+  padding: var(--padding-lg);
+  background-color: transparent;
+  border-radius: var(--br-xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button2:hover {
+  background-color: var(--blue-6);
+  border: 1px solid var(--blue-6);
+  box-sizing: border-box;
+}
+.button21:hover .text6,
+.button22:hover .text6,
+.button2:hover .text3,
+.text4 {
+  color: var(--color-white);
+}
+.text4 {
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 35px;
+  font-weight: 100;
+  font-family: var(--font-be-vietnam);
+  text-align: center;
+}
+.button3 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-xl) var(--padding-3xs);
+  background-color: var(--blue-5);
+  border-radius: var(--br-xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -2px;
+}
+.button3:hover {
+  background-color: var(--color-indigo-300);
+}
+.inputHiddenCountry,
+.text6 {
+  position: relative;
+  font-family: var(--font-be-vietnam);
+  opacity: 0;
+}
+.inputHiddenCountry {
+  border: 0;
+  display: none;
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  flex: 1;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--color-gray-400);
+  text-align: left;
+  align-items: center;
+  width: 132px;
+  cursor: default;
+}
+.inputHiddenCountry.animate,
+.text6.animate {
+  animation: 1s ease 0.5s 1 normal forwards fade-in-left;
+}
+.text6 {
+  font-size: var(--font-size-lg);
+  font-weight: 100;
+  color: var(--blue-5);
+  text-align: center;
+}
+.buttonCountry {
+  cursor: pointer;
+  border: 1px solid var(--blue-10);
+  padding: var(--padding-lg);
+  background-color: transparent;
+  border-radius: var(--br-xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button21:hover,
+.button22:hover,
+.buttonCountry:hover {
+  background-color: var(--blue-6);
+  border: 1px solid var(--color-indigo-600);
+  box-sizing: border-box;
+}
+.buttonSelect {
+  height: 114px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.button21,
+.button22,
+.description {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.button21,
+.button22 {
+  cursor: pointer;
+  border: 1px solid var(--blue-10);
+  padding: var(--padding-lg);
+  background-color: transparent;
+  border-radius: var(--br-xs);
+  align-items: center;
+  justify-content: center;
+}
+.inputHiddenUsergrade {
+  border: 0;
+  display: none;
+  font-family: var(--font-be-vietnam);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  position: relative;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--color-gray-400);
+  text-align: left;
+  cursor: default;
+  opacity: 0;
+}
+.input1.animate,
+.input2.animate,
+.inputHiddenUsergrade.animate,
+.label.animate,
+.label1.animate,
+.text12.animate {
+  animation: 1s ease 0.5s 1 normal forwards fade-in-left;
+}
+.button,
+.buttonSelectMultiple {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-lg);
+}
+.buttonSelectMultiple {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.input1,
+.label {
+  cursor: pointer;
+  position: relative;
+  font-weight: 700;
+  opacity: 0;
+}
+.input1 {
+  border: 0;
+  font-family: var(--font-be-vietnam);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  flex: 1;
+  color: var(--color-gray-400);
+  text-align: left;
+  cursor: auto;
+  outline: 0;
+}
+.board,
+.input {
+  display: flex;
+  justify-content: flex-start;
+}
+.board {
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-sm);
+  border: 1px solid var(--blue-10);
+  flex-direction: row;
+  padding: 0 var(--padding-lg);
+  align-items: center;
+}
+.input {
+  width: 388px;
+  height: 114px;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-xs);
+}
+.input2,
+.label1 {
+  cursor: pointer;
+  position: relative;
+  font-weight: 300;
+  opacity: 0;
+}
+.input2 {
+  border: 0;
+  font-family: var(--font-be-vietnam);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  color: var(--color-gray-400);
+  text-align: left;
+  display: inline-block;
+  cursor: auto;
+  outline: 0;
+  padding: 0;
+}
+.column {
+  border-radius: var(--br-sm);
+  border: 1px solid var(--blue-10);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-4xs) var(--padding-lg);
+  align-items: center;
+  justify-content: flex-start;
+}
+.text10 {
+  position: relative;
+}
+.board1,
+.inputRange {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.board1 {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: center;
+}
+.inputRange {
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--neutral-10);
+}
+.text12 {
+  flex: 1;
+  position: relative;
+  line-height: 40px;
+  cursor: auto;
+  opacity: 0;
+  outline: 0;
+}
+.board2,
+.textBoard {
+  display: flex;
+  justify-content: flex-start;
+}
+.board2 {
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-sm);
+  border: 1px solid var(--blue-10);
+  flex-direction: row;
+  padding: 0 var(--padding-lg);
+  align-items: center;
+  color: var(--blue-10);
+}
+.textBoard {
+  width: 688px;
+  height: 114px;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-xs);
+}
+.iconImageAdd {
+  position: relative;
+  width: 122px;
+  height: 115.27px;
+  flex-shrink: 0;
+}
+.buttonUploadFile {
+  border: 1px solid var(--color-black);
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-md) var(--padding-2xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+  opacity: 0;
+}
+.buttonUploadFile.animate {
+  animation: 0.5s ease 0.5s 1 normal forwards fade-in;
+}
+.iconInformation1 {
+  position: absolute;
+  height: 83.33%;
+  width: 83.33%;
+  top: 8.33%;
+  right: 8.33%;
+  bottom: 8.33%;
+  left: 8.33%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.iconInformation {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.components,
+.iconError,
+.iconInformation {
+  position: relative;
+  overflow: hidden;
+}
+.iconError {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.components {
+  background-color: var(--color-white);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 50px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-400);
+  font-family: var(--font-be-vietnam);
+}

@@ -1,0 +1,183 @@
+@keyframes fade-in-left {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.text,
+.text1 {
+  position: relative;
+  font-size: var(--font-size-base);
+  font-family: var(--font-be-vietnam);
+  color: var(--color-gray-400);
+  text-align: left;
+  opacity: 0;
+}
+.input.animate,
+.label.animate,
+.text.animate,
+.text1.animate {
+  animation: 1s ease 0.5s 1 normal forwards fade-in-left;
+}
+.text1 {
+  flex: 1;
+  line-height: 40px;
+  color: var(--blue-10);
+  cursor: auto;
+  outline: 0;
+}
+.board {
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-sm);
+  border: 1px solid var(--blue-10);
+  display: flex;
+  flex-direction: row;
+  padding: 0 var(--padding-lg);
+  align-items: center;
+  justify-content: flex-start;
+}
+.row,
+.textBoard {
+  width: 688px;
+  display: flex;
+  align-items: flex-start;
+}
+.textBoard {
+  height: 114px;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.row {
+  flex-direction: row;
+  justify-content: center;
+}
+.label {
+  cursor: pointer;
+  position: relative;
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  font-family: var(--font-be-vietnam);
+  color: var(--color-gray-400);
+  text-align: left;
+  opacity: 0;
+}
+.description {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.input {
+  border: 0;
+  font-family: var(--font-be-vietnam);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  flex: 1;
+  position: relative;
+  font-weight: 700;
+  color: var(--color-gray-400);
+  text-align: left;
+  cursor: auto;
+  opacity: 0;
+  outline: 0;
+}
+.inputUserpw {
+  flex: 1;
+  height: 114px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.inputUserpw,
+.inputUserpwcheck,
+.row1 {
+  display: flex;
+  align-items: flex-start;
+}
+.inputUserpwcheck {
+  width: 256px;
+  height: 114px;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.row1 {
+  width: 688px;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--gap-lg);
+}
+.text2 {
+  position: relative;
+  font-size: var(--font-size-2xl);
+  line-height: 35px;
+  font-family: var(--font-be-vietnam);
+  color: var(--color-white);
+  text-align: center;
+}
+.buttonCancle,
+.buttonChangepw {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-sm) var(--padding-xl) var(--padding-xl);
+  background-color: var(--blue-5);
+  align-self: stretch;
+  border-radius: var(--br-xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -2px;
+}
+.buttonChangepw {
+  flex: 1;
+}
+.buttonCancle:hover,
+.buttonChangepw:hover {
+  background-color: var(--color-indigo-300);
+}
+.buttonCancle {
+  width: 162px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+.form,
+.popupResultFindId {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.form {
+  align-items: center;
+  gap: var(--gap-xs);
+}
+.popupResultFindId {
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  align-items: flex-start;
+  opacity: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+.popupResultFindId.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-right;
+}
